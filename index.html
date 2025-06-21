@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Courses Showcase</title>
+  <style>
+    /* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Light blue background */
+  color: #1a237e; /* Darker blue for text */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: #0d47a1; /* Dark blue header */
+  padding: 30px;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Add some depth */
+  animation: slideDown 1s ease-out;
+}
+
+/* Course Container */
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Course Card */
+.course-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add deeper shadow */
+  margin: 20px;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #00bcd4, #0d47a1); /* Border gradient */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.course-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  border-color: transparent; /* Hide the border when hovered */
+  background-image: linear-gradient(white, white), linear-gradient(to right, #00bcd4, #1a237e);
+}
+
+/* Course Image */
+.course-image {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.course-card:hover .course-image {
+  opacity: 0.9;
+}
+
+/* Course Title */
+
+.course-title {
+      font-size: 1.em;
+      color: #333;
+      margin: 15px 0;
+    }
+
+/* Course Link */
+.course-link {
+  text-decoration: none;
+  color: #00bcd4; /* Light blue link */
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.course-link:hover {
+  color: #0d47a1; /* Darker blue on hover */
+  text-shadow: 0 0 8px rgba(0, 188, 212, 0.8); /* Glowing effect on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #1a237e; /* Darker blue */
+  color: white;
+  font-size: 1.2em;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 -8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .course-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .header {
+    font-size: 2em;
+  }
+}
+
+
+   
+
+    
+  
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    Explore Our Online Courses
+  </header>
+
+  <section class="courses-container">
+
+     <!-- Notes -->
+     <div class="course-card">
+        <img src="https://media.istockphoto.com/vectors/web-developer-design-vector-id485654262?k=6&m=485654262&s=170667a&w=0&h=1sFRVGEfwscxxbhQO0Pv7YL9zEH3ntyyAb5jDWnhMrQ=" alt="AI Course" class="course-image">
+        <h3 class="course-title">Web Dev Notes</h3>
+        <a href="https://drive.google.com/open?id=1LP1tq0j-5uaNBdmigDWSHNRJGSXSeD8G&usp=drive_copy" class="course-link">View Notes</a>
+      </div>
+       <!-- Notes -->
+     <div class="course-card">
+        <img src="https://th.bing.com/th/id/OIP.EyGSf1vPaIdSiS5zkz42_gHaE8?w=1800&h=1200&rs=1&pid=ImgDetMain" alt="AI Course" class="course-image">
+        <h3 class="course-title">Software Dev Notes</h3>
+        <a href="https://drive.google.com/open?id=1tpKQQ7rNA0qyxE5Nr36u1K21G4si0k0t&usp=drive_copy" class="course-link">View Notes</a>
+      </div>
+         <!-- Notes -->
+     <div class="course-card">
+        <img src="https://static.vecteezy.com/system/resources/previews/007/340/656/original/job-interview-illustration-free-vector.jpg" alt="AI Course" class="course-image">
+        <h3 class="course-title">Interview Guide </h3>
+        <a href="https://drive.google.com/open?id=1zF18xtuR6JcYduuwdzVPqXxaQipePAXG&usp=drive_copy" class="course-link">View Guides </a>
+      </div>
+          <!-- Notes -->
+     <div class="course-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHo6VrYgttHMbkNUXsLiMu4kczlE4tf4cYvVqNllnQ8qhtv4gWoZjwFA-zhgZ-rgYkOBc&usqp=CAU" alt="AI Course" class="course-image">
+        <h3 class="course-title">CS Theory Notes</h3>
+        <a href="https://drive.google.com/open?id=1V4hTvIr4ZNApfbeT4t30spMvgUhiF1k8&usp=drive_copy" class="course-link">View Notes</a>
+      </div>
+          <!-- Notes -->
+     <div class="course-card">
+        <img src="https://cdn2.vectorstock.com/i/1000x1000/28/76/reading-books-and-e-books-flat-design-vector-6782876.jpg" alt="AI Course" class="course-image">
+        <h3 class="course-title">E BOOKS</h3>
+        <a href="https://drive.google.com/open?id=1ZI1B-0_5L7sSdrhXurLjD67G02J4ripq&usp=drive_copy" class="course-link">View E BOOKS</a>
+      </div>
+    <!-- AI For Everyone -->
+    <div class="course-card">
+      <img src="https://knijnops.com/wp-content/uploads/2019/08/ai-for-everyone.jpg" alt="AI Course" class="course-image">
+      <h3 class="course-title">AI For Everyone</h3>
+      <a href="https://www.coursera.org/learn/ai-for-everyone?irclickid=Q3fwW6xhPxyKTt6Sf5UUr3fGUkC3Xa0BbTIIX40&irgwc=1&utm_campaign=4225454&utm_content=b2c&utm_medium=partners&utm_source=impact" class="course-link">View Course</a>
+    </div>
+
+    <!-- Frontend Developer Career Path -->
+    <div class="course-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/008/826/724/original/programmer-developer-engineer-with-laptop-sitting-at-the-office-desk-holding-a-pen-while-coding-and-developing-concept-illustration-free-vector.jpg" alt="Frontend Developer Course" class="course-image">
+      <h3 class="course-title">Frontend Developer Career Path</h3>
+      <a href="https://v2.scrimba.com/the-frontend-developer-career-path-c0j" class="course-link">View Course</a>
+    </div>
+
+    <!-- Full Stack Web Development -->
+    <div class="course-card">
+      <img src="https://th.bing.com/th/id/OIP.yMpjshumBE6oDD-zUg7MrQAAAA?rs=1&pid=ImgDetMain" alt="Full Stack Web Development" class="course-image">
+      <h3 class="course-title">Full Stack Web Development</h3>
+      <a href="https://mega.nz/folder/lxhERBZL#WPhYniXuRPwRS29_M0ygJQ" class="course-link">View Course</a>
+    </div>
+
+    <!-- Lots of Free Courses -->
+    <div class="course-card">
+      <img src="https://image.freepik.com/free-vector/flat-design-online-courses-illustration_23-2148528493.jpg" alt="Free Courses" class="course-image">
+      <h3 class="course-title">Lots of Free Courses</h3>
+      <a href="https://drive.google.com/drive/folders/1ezDZ3uDplBOjbuBGw1qxzzD64tiXhtDt" class="course-link">View Courses</a>
+    </div>
+
+    <!-- Google Career Certificates -->
+    <div class="course-card">
+      <img src="https://dclibrary.libnet.info/images/events/dclibrary/GCC.PNG" alt="Google Career Certificates" class="course-image">
+      <h3 class="course-title">Google Career Certificates</h3>
+      <a href="https://www.youtube.com/@GoogleCareerCertificates" class="course-link">View YouTube Channel</a>
+    </div>
+
+    <!-- Cybersecurity for Beginners -->
+    <div class="course-card">
+      <img src="https://www.reliablesoft.net/wp-content/uploads/2023/05/google-cybersecurity-certificate-of-completion.webp" alt="Cybersecurity for Beginners" class="course-image">
+      <h3 class="course-title">Cybersecurity for Beginners</h3>
+      <a href="https://youtu.be/_DVVNOGYtmU?si=ps1vdVao3uqfyh_C" class="course-link">Watch on YouTube</a>
+    </div>
+
+    <!-- Python How To | Google IT Automation -->
+    <div class="course-card">
+      <img src="https://i.ytimg.com/vi/wgYbksLbaqU/maxresdefault.jpg" alt="Python How To" class="course-image">
+      <h3 class="course-title">Python How To | Google IT Automation</h3>
+      <a href="https://youtu.be/wgYbksLbaqU?si=HF3yo8xqdq38xG1c" class="course-link">Watch on YouTube</a>
+    </div>
+
+    <!-- Welcome to IT Support -->
+    <div class="course-card">
+      <img src="https://cryptoshitcompra.com/wp-content/uploads/2022/08/How-to-Get-a-Google-IT-Support-Professional-Certificate-850x385.png" alt="Welcome to IT Support" class="course-image">
+      <h3 class="course-title">Welcome to IT Support</h3>
+      <a href="https://youtu.be/lJC_sJ6jhDo?si=f7JXeRC6NUYPTxdP" class="course-link">Watch on YouTube</a>
+    </div>
+
+    <!-- Data Analytics for Beginners -->
+    <div class="course-card">
+      <img src="https://i.ytimg.com/vi/GbL-42kv5LI/maxresdefault.jpg" alt="Data Analytics for Beginners" class="course-image">
+      <h3 class="course-title">Data Analytics for Beginners</h3>
+      <a href="https://youtu.be/GbL-42kv5LI?si=oPozhFejEuLwL2br" class="course-link">Watch on YouTube</a>
+    </div>
+
+    <!-- Understanding Data Types and Structures -->
+    <div class="course-card">
+      <img src="https://i.ytimg.com/vi/NhwvA5Zqtio/maxresdefault.jpg" alt="Understanding Data Types and Structures" class="course-image">
+      <h3 class="course-title">Understanding Data Types and Structures</h3>
+      <a href="https://youtu.be/NhwvA5Zqtio?si=o2PmBpMIKm2X7bYA" class="course-link">Watch on YouTube</a>
+    </div>
+
+    <!-- Problem Solving with Data Analytics -->
+    <div class="course-card">
+      <img src="https://i.ytimg.com/vi/wSct_cbqzpM/maxresdefault.jpg" alt="Problem Solving with Data Analytics" class="course-image">
+      <h3 class="course-title">Problem Solving with Data Analytics</h3>
+      <a href="https://youtu.be/wSct_cbqzpM?si=rqMoQnWdihInU3pt" class="course-link">Watch on YouTube</a>
+    </div>
+
+    <!-- IT Security: Defense Against the Digital Dark Arts -->
+    <div class="course-card">
+      <img src="https://th.bing.com/th/id/OIP.qz3siVtyB7Y7DHBcKD3xqAHaEK?rs=1&pid=ImgDetMain" alt="IT Security: Defense" class="course-image">
+      <h3 class="course-title">IT Security: Defense Against the Digital Dark Arts</h3>
+      <a href="https://youtu.be/NU88S1LXNOU?si=TyjAUTzTOs2pVd4L" class="course-link">Watch on YouTube</a>
+    </div>
+
+    <!-- The Operating System: Files & Directories -->
+    <div class="course-card">
+      <img src="https://i.ytimg.com/vi/1x4zh2BLuh0/maxresdefault.jpg" alt="The Operating System: Files & Directories" class="course-image">
+      <h3 class="course-title">The Operating System: Files & Directories</h3>
+      <a href="https://youtu.be/1x4zh2BLuh0?si=SLab6PO2Ab1L2nM5" class="course-link">Watch on YouTube</a>
+    </div>
+
+  </section>
+
+</body>
+</html>
